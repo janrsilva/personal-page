@@ -12,3 +12,5 @@ dist
 
 #IDE
 .vscode
+
+**/firebase-debug.log
