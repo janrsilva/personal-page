@@ -1,26 +1,12 @@
 <template>
-  <section class="container">
-    <div>
-      <app-logo/>
-      <h1 class="title">
-        personal-page
-      </h1>
-      <h2 class="subtitle">
-        Personal and Professional informations about me Janderson Silva
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green">Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey">GitHub</a>
-      </div>
-    </div>
+  <section>
+    <div class="container" id="content"></div>
+    <script src="/js/markdown.js"></script>
+    <script src="/js/parser.js"></script>
   </section>
 </template>
+
+
 
 <script>
 import AppLogo from '~/components/AppLogo.vue'
@@ -34,31 +20,29 @@ export default {
 
 <style>
 .container {
+  margin: 25px 50px;
   min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
 }
 
-.title {
+h1 {
   font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
   display: block;
   font-weight: 300;
-  font-size: 100px;
+  font-size: 50px;
   color: #35495e;
   letter-spacing: 1px;
 }
 
-.subtitle {
+h3 {
+  margin-top: 10px; 
   font-weight: 300;
-  font-size: 42px;
+  font-size: 22px;
   color: #526488;
   word-spacing: 5px;
   padding-bottom: 15px;
 }
 
-.links {
+a {
   padding-top: 15px;
 }
 </style>
